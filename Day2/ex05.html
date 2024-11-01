@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <form
+            action="https://api-gateway.fullstack.edu.vn/action_page.php"
+            method="post"
+        >
+            <h1>Đăng kí</h1>
+
+            <div>
+                <label for="username">Username</label>
+                <input
+                    type="text"
+                    id="username"
+                    name="username"
+                    placeholder="Nhập username..."
+                    required
+                />
+            </div>
+
+            <div>
+                <label for="email">Email</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Nhập email..."
+                    required
+                />
+            </div>
+
+            <div>
+                <label for="password">Password</label>
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Nhập password..."
+                    minlength="8"
+                    required
+                />
+            </div>
+
+            <div>
+                <input type="radio" id="male" name="gender" checked />
+                <label for="male">Nam</label>
+                <input type="radio" id="female" name="gender" />
+                <label for="female">Nữ</label>
+            </div>
+
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+
+            <select name="gender" id="gender">
+                <option value="" selected>Chọn giới tính</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <button type="submit">Đăng kí</button>
+        </form>
+    </body>
+</html>
