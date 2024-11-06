@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Box model</title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            .boxes {
+                width: 560px;
+                height: 300px;
+                padding: 50px;
+                background-color: yellow;
+                font-size: 0;
+
+                & > * {
+                    display: inline-block;
+                }
+            }
+
+            .left-box {
+                width: 114px;
+                height: 114px;
+                background-color: aqua;
+                margin-right: 16px;
+                vertical-align: top;
+            }
+
+            .right-box {
+                width: 330px;
+                height: 100%;
+                background-color: violet;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="boxes">
+            <div class="left-box"></div>
+            <div class="right-box"></div>
+        </div>
+    </body>
+</html>
