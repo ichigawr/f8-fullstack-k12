@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Common: BEGIN */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+}
+
+html {
+    background-color: #d8dae2;
+}
+
+body {
+    width: 1563px;
+    height: 777px;
+    margin: 216px auto;
+    padding: 62px;
+    border-radius: 26px;
+    background-color: #Eff0f1;
+    box-shadow: 0px 76px 27px 0px #061B521A;
+    font-family: 'Poppins', sans-serif;
+    color: #0e0e38;
+}
+
+img {
+    object-fit: cover;
+    border-radius: 24px;
+}
+
+/* Common: END */
+
+/* Header: BEGIN */
+
+#header {
+    margin-bottom: 56px;
+}
+
+h1 {
+    font-family: 'Merriweather', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40.22px;
+    margin-bottom: 24px;
+}
+
+li {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    line-height: 24px;
+    
+    &:not(:last-of-type) {
+        margin-right: 8px;
+    }
+}
+
+/* Header: END */
+
+/* Main: BEGIN */
+
+#main {
+    font-size: 0;
+}
+
+.image-container {
+    margin-bottom: 24px;
+}
+
+.collection {
+    display: inline-block;
+    width: 437px;
+    height: 489px;
+    padding: 24px;
+    border-radius: 32px;
+    background-color: #ffffff;
+
+    &:not(:last-of-type) {
+        margin-right: 64px;
+    }
+}
+
+.main-image {
+    width: 389px;
+    height: 268px;
+    margin-bottom: 16px;
+}
+
+.sub-images > * {
+    width: 119px;
+    height: 97px;
+
+    &:not(:last-child) {
+        margin-right: 16px;
+    }
+}
+
+h2, p, i {
+    vertical-align: middle;
+}
+
+h2, p {
+    display: inline-block;
+}
+
+h2 {
+    width: 311px;
+    margin-right: 16px;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+p {
+    font-size: 16px;
+
+    i {
+        font-size: 26px;
+        color: #2c3e50;
+        margin: 0 6px 2px 0;
+    }
+}
+
+/* Main: END */
+
+/* Background: BEGIN */
+
+.ellipse {
+    width: 433px;
+    height: 410px;
+    top: 742px;
+    left: 239px;
+    border-radius: 50%;
+    background-color: #E5E7F0;
+    position: absolute;
+    z-index: -1;
+
+    &:last-of-type {
+        width: 310px;
+        height: 294px;
+        top: 68px;
+        left: 984px;
+    }
+}
+
+/* Background: END */
