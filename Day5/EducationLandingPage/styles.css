@@ -205,7 +205,7 @@ nav > ul {
     justify-content: space-between;
 
     &:hover .card:not(:hover) {
-        filter: brightness(0.5);
+        filter: brightness(0.5) blur(1.2px);
     }
 }
 
