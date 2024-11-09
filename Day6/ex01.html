@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Outline</title>
+        <style>
+            ul {
+                display: flex;
+                gap: 20px;
+            }
+
+            li {
+                list-style: none;
+
+                &:hover {
+                    outline: 3px solid aquamarine;
+                    outline-offset: 5px;
+                }
+            }
+
+            .box {
+                width: 550px;
+                height: 400px;
+                font-size: 45px;
+                font-weight: 900;
+                color: transparent;
+                background-image: url("https://steamuserimages-a.akamaihd.net/ugc/2539550472917834113/1D9AA193CDEAC8DD4B5FCE9F72AAA7634D820D41/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false");
+                background-position: center;
+                background-size: cover;
+                background-clip: text;
+                /* background-origin: border-box; */
+                /* background-clip: border-box; */
+                border: 20px solid transparent;
+            }
+
+            .box2 {
+                width: 400px;
+                height: 200px;
+                /* background: linear-gradient(45deg, #f3ec78, #af4261); */
+                background: radial-gradient(ellipse, #f3ec78, #af4261);
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li>Lorem, ipsum.</li>
+            <li>Esse, odio.</li>
+            <li>Aspernatur, temporibus.</li>
+            <li>Dolorem, expedita?</li>
+        </ul>
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur laborum earum natus perspiciatis! Exercitationem nesciunt inventore placeat, autem illum minima?</div>
+        <div class="box2"></div>
+    </body>
+</html>

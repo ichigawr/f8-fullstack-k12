@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Common: BEGIN */
+
+:root {
+    --light-black: #3A3A3A;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 1920px;
+    height: 2722px;
+    margin: auto;
+    padding: 32px 256px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Common: END */
+
+/* Header: BEGIN */
+
+#header {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav > ul {
+    display: flex;
+    gap: 32px;
+
+    li {
+        list-style: none;
+    }
+
+    a {
+        color: #000;
+        text-decoration: 0;
+        transition: ease 0.3s;
+
+        &:hover {
+            color: #AD5727;
+        }
+    }
+}
+
+/* Header: END */
+
+/* Main: BEGIN */
+
+#main {
+    color: var(--light-black);
+    text-align: center;
+
+    h1, .section p {
+        font-size: 32px;
+    }
+
+    h1 {
+        margin-bottom: 32px;
+    }
+
+    & > p, h2 {
+        color: #BB7E52;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    
+    & > img {
+        margin: 32px 0 64px;
+
+        &:last-child {
+            margin: 96px 0;
+        }
+    }
+}
+
+#sections {
+    display: flex;
+    gap: 32px;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+
+    p {
+        font-weight: 700;
+        line-height: 42px; /* 131.25% */
+    }
+
+    &:nth-child(2) {
+        flex-direction: column-reverse;
+    }
+}
+
+.desc {
+    width: 448px;
+    height: 448px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Main: END */
+
+/* Footer: BEGIN */
+
+#footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 32px;
+}
+
+form {
+    display: flex;
+    gap: 8px;
+}
+
+#email {
+    --grey: #9C9C9C;
+    
+    field-sizing: content;
+    padding: 10px 40px 10px 10px;
+    border: 1px solid var(--grey);
+    font-size: 16px;
+
+    &::placeholder {
+        color: var(--grey);
+        opacity: 1;
+    }
+}
+
+button {
+    padding: 10px;
+    background-color: var(--light-black);
+    border: none;
+    color: #FFF;
+    font-size: 16px;
+}
+
+/* Footer: END */
