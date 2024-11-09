@@ -51,6 +51,7 @@ a {
 
 #header-logo {
     font-size: 32px;
+    font-weight: 500;
     line-height: 48px;
 }
 
@@ -213,6 +214,7 @@ nav > ul {
     width: 295px;
     height: 450px;
     border-radius: 17px;
+    font-size: 0;
     background-color: #FFFFFF;
     transition: ease 0.3s;
 
@@ -222,11 +224,13 @@ nav > ul {
 
     p {
         font-size: 20px;
+        font-weight: 500;
         line-height: 30px;
         margin: 20px 0 0 20px;
 
         &:last-of-type {
             font-size: 16px;
+            font-weight: 400;
             line-height: 24px;
             color: #9B948E;
             margin: 6px 0 20px 20px;
