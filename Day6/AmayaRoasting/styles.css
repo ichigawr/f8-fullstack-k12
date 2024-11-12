@@ -13,10 +13,10 @@
 }
 
 body {
-    width: 1920px;
+    width: 1408px;
     height: 2722px;
     margin: auto;
-    padding: 32px 256px;
+    padding: 32px 0;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -24,9 +24,10 @@ body {
 
 /* Header: BEGIN */
 
-#header {
+header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 nav > ul {
@@ -52,7 +53,7 @@ nav > ul {
 
 /* Main: BEGIN */
 
-#main {
+main {
     color: var(--light-black);
     text-align: center;
 
@@ -110,7 +111,7 @@ nav > ul {
 
 /* Footer: BEGIN */
 
-#footer {
+footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
