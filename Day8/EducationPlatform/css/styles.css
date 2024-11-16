@@ -1,0 +1,330 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sen:wght@400..800&display=swap");
+
+/* Common: BEGIN */
+:root {
+    --black: #171100;
+    --grey: #5f5b53;
+    --yellow: #ffb900;
+}
+
+body {
+    width: 73.125rem;
+    height: 56.25rem;
+    margin: auto;
+    padding: 2.25rem 0 4.0625rem;
+    background: #fff;
+    font-family: "Poppins", serif;
+    font-size: 1.125rem;
+    color: var(--black);
+}
+
+h2 {
+    margin-bottom: 16px;
+    color: var(--black);
+    font-family: "Sen", serif;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -0.76px;
+}
+
+.btn {
+    color: #fff;
+    font-weight: 600;
+    transition: transform ease 0.3s;
+
+    &:active {
+        transform: scale(0.95);
+    }
+}
+
+/* Common: END */
+
+/* Main: BEGIN */
+
+/* Hero: BEGIN */
+
+#hero {
+    background-color: #fffcf4;
+}
+
+#menu {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4.0625rem;
+}
+
+#logo {
+    margin-right: 32rem;
+    font-family: "Sen", serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 2.125rem;
+}
+
+.yellow {
+    color: var(--yellow);
+}
+
+nav > ul {
+    display: flex;
+    gap: 2.625rem;
+    margin-right: 4.375rem;
+
+    li {
+        font-size: 1rem;
+        line-height: 1.75rem;
+
+        &:hover {
+            text-shadow: -0.07ex 0 0 var(--black), 0.07ex 0 0 var(--black);
+        }
+    }
+}
+
+#sign-up-btn {
+    padding: 0.6875rem 2.5625rem 0.625rem;
+    border-radius: 1.5313rem;
+    background-color: #171100;
+    font-size: 1rem;
+    line-height: 1.75rem;
+}
+
+#content {
+    display: flex;
+    gap: 14.375rem;
+}
+
+/* Left content: BEGIN */
+
+#left-content {
+    position: relative;
+}
+
+#left-content > img {
+    width: 29.375rem;
+    height: 42.8125rem;
+    border-radius: 1.25rem;
+    object-fit: cover;
+    object-position: 80%;
+    filter: grayscale(0.05);
+}
+
+#card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    top: 24.5625rem;
+    left: 18.75rem;
+    width: 16.875rem;
+    height: 15.25rem;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    background: #fff;
+    box-shadow: 0rem 1rem 2rem 0rem rgba(0, 0, 0, 0.05);
+
+    small {
+        color: var(--grey);
+        font-size: 0.875rem;
+        line-height: 1.625rem;
+    }
+
+    p {
+        font-weight: 600;
+        line-height: 1.875rem;
+    }
+}
+
+.course {
+    height: 3.5rem;
+}
+
+.icon {
+    float: left;
+    margin-right: 1rem;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Left content: END */
+
+/* Right content: BEGIN */
+
+#right-content {
+    margin-top: 4rem;
+
+    h1 {
+        margin-bottom: 1.375rem;
+        font-family: "Sen", serif;
+        font-size: 3.625rem;
+        font-weight: 700;
+        line-height: 4.25rem;
+        letter-spacing: -0.0725rem;
+    }
+
+    p {
+        margin-bottom: 2.375rem;
+        color: var(--grey);
+        line-height: 1.875rem;
+    }
+}
+
+#see-more {
+    display: flex;
+    align-items: center;
+    height: 4rem;
+    margin-bottom: 3rem;
+}
+
+#watch-video {
+    display: flex;
+    align-items: center;
+
+    img {
+        margin: 0.875rem -0.1875rem 0 0.75rem;
+    }
+
+    p {
+        color: var(--black);
+        font-weight: 600;
+        margin: 0;
+    }
+}
+
+#see-courses-btn {
+    padding: 1.0625rem 2.0625rem 1.0625rem 2.125rem;
+    border-radius: 2rem;
+    background-color: var(--yellow);
+    line-height: 1.875rem;
+}
+
+#right-content > p:nth-of-type(2) {
+    margin-bottom: 0.5rem;
+}
+
+#engagement {
+    display: flex;
+    gap: 1.75rem;
+}
+
+.big {
+    color: var(--black);
+    font-family: "Sen", serif;
+    font-size: 2.75rem;
+    font-weight: 700;
+    line-height: 3.375rem;
+}
+
+/* Right content: END */
+
+/* Hero: END */
+
+/* Courses: BEGIN */
+
+#courses {
+    padding: 135px 0;
+}
+
+#courses-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 55px;
+
+    & > div:not(#nav-btns) {
+        width: 458px;
+
+        p {
+            color: var(--grey);
+            line-height: 30px;
+        }
+    }
+}
+
+#cards {
+    display: flex;
+    gap: 30px;
+}
+
+.card {
+    width: 370px;
+    height: 466px;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.05);
+
+    & > img {
+        width: 370px;
+        height: 278px;
+        border-radius: 12px 12px 0 0;
+    }
+}
+
+.card-info {
+    padding: 16px 22px 22px;
+
+    h3,
+    .price {
+        color: var(--black);
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 30px;
+    }
+}
+
+.card-info-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rating {
+    img {
+        vertical-align: middle;
+    }
+
+    span {
+        vertical-align: middle;
+        color: #fea31b;
+        font-size: 16px;
+        line-height: 28px;
+    }
+}
+
+.card-info > p:not(.price) {
+    margin: 6px 0 12px;
+    color: var(--grey);
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.course-booking {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+        padding: 12px 24px;
+        border-radius: 25px;
+        background-color: var(--black);
+        color: #fff;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 26px;
+        transition: background-color ease 0.3s;
+
+        &:hover {
+            background-color: var(--yellow);
+        }
+    }
+}
+
+.card:last-of-type > img {
+    object-fit: none;
+    object-position: 40% 40%;
+}
+
+/* Courses: END */
+
+/* Main: END */
