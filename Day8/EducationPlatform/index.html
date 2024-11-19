@@ -5,18 +5,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Lesson.</title>
         <link rel="stylesheet" href="css/reset.css" />
-        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="css/main.css" />
     </head>
     <body>
         <main>
             <section id="hero">
-                <div id="hero-container">
-                    <section id="menu">
-                        <a href="#" id="logo"
-                            >Lesson<span class="yellow">.</span></a
-                        >
+                <section id="hero__menu">
+                    <div class="container">
+                        <a href="#" id="hero__menu__logo">
+                            Lesson<span class="yellow">.</span>
+                        </a>
                         <nav>
-                            <ul>
+                            <ul class="d-flex">
                                 <li><a href="#">Home</a></li>
                                 <li><a href="#">Course</a></li>
                                 <li><a href="#">Pricing</a></li>
@@ -24,78 +24,85 @@
                             </ul>
                         </nav>
                         <a href="#" id="sign-up-btn" class="btn">Sign Up</a>
-                    </section>
-    
-                    <section id="content">
-                        <div id="left-content">
-                            <img
-                                src="assets/images/studying-guy.jpg"
-                                alt="A studying guy"
-                            />
-                            <div id="card">
-                                <div class="course">
-                                    <img
-                                        src="assets/images/Orion_page.svg"
-                                        alt="Page icon"
-                                        class="icon"
-                                    />
-                                    <small>20 Courses</small>
-                                    <p>UI/UX Design</p>
-                                </div>
-                                <div class="course">
-                                    <img
-                                        src="assets/images/Orion_code-window.svg"
-                                        alt="Code window icon"
-                                        class="icon"
-                                    />
-                                    <small>20 Courses</small>
-                                    <p>Development</p>
-                                </div>
-                                <div class="course">
-                                    <img
-                                        src="assets/images/Orion_megaphone.svg"
-                                        alt="Megaphone icon"
-                                        class="icon"
-                                    />
-                                    <small>30 Courses</small>
-                                    <p>Marketing</p>
-                                </div>
+                    </div>
+                </section>
+
+                <section id="hero__content" class="container d-flex">
+                    <div id="hero__content--left">
+                        <img
+                            src="assets/images/studying-guy.jpg"
+                            alt="A studying guy"
+                        />
+                        <div id="card" class="d-flex justify-between">
+                            <div class="course">
+                                <img
+                                    src="assets/images/Orion_page.svg"
+                                    alt="Page icon"
+                                    class="icon"
+                                />
+                                <small>20 Courses</small>
+                                <p>UI/UX Design</p>
+                            </div>
+                            <div class="course">
+                                <img
+                                    src="assets/images/Orion_code-window.svg"
+                                    alt="Code window icon"
+                                    class="icon"
+                                />
+                                <small>20 Courses</small>
+                                <p>Development</p>
+                            </div>
+                            <div class="course">
+                                <img
+                                    src="assets/images/Orion_megaphone.svg"
+                                    alt="Megaphone icon"
+                                    class="icon"
+                                />
+                                <small>30 Courses</small>
+                                <p>Marketing</p>
                             </div>
                         </div>
-    
-                        <div id="right-content">
-                            <h1>Learn without limits and spread knowledge.</h1>
-                            <p>
-                                Build new skills for that “this is my year” feeling
-                                with courses, certificates, and degrees from
-                                world-class universities and companies.
-                            </p>
-    
-                            <div id="see-more">
-                                <a href="#" id="see-courses-btn" class="btn"
-                                    >See Courses</a
-                                >
-                                <a href="#" id="watch-video">
-                                    <img
-                                        src="assets/images/play-button.svg"
-                                        alt="Play button"
-                                    />
-                                    <p>Watch Video</p>
-                                </a>
-                            </div>
-    
-                            <p>Recent engagement</p>
-                            <div id="engagement">
-                                <p><span class="big">50K </span>Students</p>
-                                <p><span class="big">70+ </span>Courses</p>
-                            </div>
+                    </div>
+
+                    <div id="hero__content--right">
+                        <h1>Learn without limits and spread knowledge.</h1>
+                        <p>
+                            Build new skills for that “this is my year” feeling
+                            with courses, certificates, and degrees from
+                            world-class universities and companies.
+                        </p>
+
+                        <div id="see-more" class="d-flex align-center">
+                            <a href="#" id="see-courses-btn" class="btn">
+                                See Courses
+                            </a>
+                            <a
+                                href="#"
+                                id="watch-video"
+                                class="d-flex align-center"
+                            >
+                                <img
+                                    src="assets/images/play-button.svg"
+                                    alt="Play button"
+                                />
+                                <p>Watch Video</p>
+                            </a>
                         </div>
-                    </section>
-                </div>
+
+                        <p>Recent engagement</p>
+                        <div id="engagement" class="d-flex">
+                            <p><span class="big">50K </span>Students</p>
+                            <p><span class="big">70+ </span>Courses</p>
+                        </div>
+                    </div>
+                </section>
             </section>
 
-            <section id="courses">
-                <div id="courses-header">
+            <section id="courses" class="container">
+                <div
+                    id="courses__header"
+                    class="d-flex justify-between align-center"
+                >
                     <div>
                         <h2>Our popular courses</h2>
                         <p>
@@ -104,7 +111,7 @@
                         </p>
                     </div>
 
-                    <div id="nav-btns">
+                    <div id="courses__header__nav-btns" class="d-flex">
                         <button>
                             <svg
                                 width="40"
@@ -152,7 +159,7 @@
                     </div>
                 </div>
 
-                <div id="cards">
+                <div id="course__cards" class="d-flex">
                     <div class="card">
                         <a href="#">
                             <img
@@ -162,7 +169,9 @@
                         </a>
 
                         <div class="card-info">
-                            <div class="card-info-heading">
+                            <div
+                                class="card-info__heading d-flex justify-between align-center"
+                            >
                                 <a href="#"><h3>Basic web design</h3></a>
 
                                 <div class="rating">
@@ -179,9 +188,11 @@
                                 for your future career.
                             </p>
 
-                            <div class="course-booking">
+                            <div
+                                class="course-booking d-flex justify-between align-center"
+                            >
                                 <p class="price">$120.75</p>
-                                <a href="#">Book Now</a>
+                                <a href="#" class="btn">Book Now</a>
                             </div>
                         </div>
                     </div>
@@ -195,7 +206,9 @@
                         </a>
 
                         <div class="card-info">
-                            <div class="card-info-heading">
+                            <div
+                                class="card-info__heading d-flex justify-between align-center"
+                            >
                                 <a href="#"><h3>UI/UX design</h3></a>
 
                                 <div class="rating">
@@ -212,9 +225,11 @@
                                 for your future career.
                             </p>
 
-                            <div class="course-booking">
+                            <div
+                                class="course-booking d-flex justify-between align-center"
+                            >
                                 <p class="price">$120.75</p>
-                                <a href="#">Book Now</a>
+                                <a href="#" class="btn">Book Now</a>
                             </div>
                         </div>
                     </div>
@@ -228,7 +243,9 @@
                         </a>
 
                         <div class="card-info">
-                            <div class="card-info-heading">
+                            <div
+                                class="card-info__heading d-flex justify-between align-center"
+                            >
                                 <a href="#"><h3>Web App design</h3></a>
 
                                 <div class="rating">
@@ -245,14 +262,146 @@
                                 for your future career.
                             </p>
 
-                            <div class="course-booking">
+                            <div
+                                class="course-booking d-flex justify-between align-center"
+                            >
                                 <p class="price">$120.75</p>
-                                <a href="#">Book Now</a>
+                                <a href="#" class="btn">Book Now</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+
+            <section id="testimonial">
+                <div class="container d-flex">
+                    <div id="peter-moor-info">
+                        <img
+                            src="assets/images/peter-moor.png"
+                            alt="Peter Moor"
+                        />
+
+                        <p>Peter Moor</p>
+                        <p>Student of Web Design</p>
+
+                        <div class="d-flex">
+                            <a href="#">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="6"
+                                    height="6"
+                                    viewBox="0 0 6 6"
+                                    fill="none"
+                                >
+                                    <circle
+                                        cx="3"
+                                        cy="3"
+                                        r="3"
+                                        fill="#634700"
+                                    />
+                                </svg>
+                            </a>
+                            <a href="#">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="6"
+                                    height="6"
+                                    viewBox="0 0 6 6"
+                                    fill="none"
+                                >
+                                    <circle
+                                        cx="3"
+                                        cy="3"
+                                        r="3"
+                                        fill="#634700"
+                                    />
+                                </svg>
+                            </a>
+                            <a href="#">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="6"
+                                    height="6"
+                                    viewBox="0 0 6 6"
+                                    fill="none"
+                                >
+                                    <circle
+                                        cx="3"
+                                        cy="3"
+                                        r="3"
+                                        fill="#634700"
+                                    />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div id="peter-moor-quote">
+                        <img
+                            src="assets/images/double-quote.svg"
+                            alt="Double quote"
+                        />
+                        <blockquote>
+                            Not only does my resume look impressive—filled with
+                            the names and logos of world-class institutions—but
+                            these certificates also bring me closer to my career
+                            goals by validating the skills I've learned."
+                        </blockquote>
+                    </div>
+                </div>
+            </section>
+
+            <section id="features-and-cta" class="container">
+                <div id="features" class="d-flex align-center">
+                    <div id="features__illustration" class="d-flex">
+                        <img
+                            src="assets/images/working-man-1.png"
+                            alt="A working man"
+                        />
+                        <img
+                            src="assets/images/working-man-2.png"
+                            alt="A working man"
+                        />
+                    </div>
+
+                    <article>
+                        <h2>Learner outcomes through our awesome platform</h2>
+                        <p>
+                            87% of people learning for professional development
+                            report career benefits like getting a promotion, a
+                            raise, or starting a new career.
+                        </p>
+                        <small>Lesson Impact Report (2022)</small>
+                        <a href="#" class="btn">Sign Up</a>
+                    </article>
+                </div>
+
+                <div id="cta" class="d-flex align-center">
+                    <article>
+                        <h2>
+                            Take the next step toward your personal and
+                            professional goals with Lesson.
+                        </h2>
+                        <p>
+                            Take the next step toward. Join now to receive
+                            personalized and more recommendations from the full
+                            Coursera catalog.
+                        </p>
+                        <a href="#" class="btn">Join Now</a>
+                    </article>
+
+                    <img
+                        src="assets/images/working-man-2.png"
+                        alt="A working man"
+                    />
+                </div>
+            </section>
         </main>
+
+        <footer>
+            <div class="footer__inner container">
+                <div class="footer-col"></div>
+            </div>
+        </footer>
     </body>
 </html>
