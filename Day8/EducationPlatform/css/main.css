@@ -425,17 +425,18 @@ h2 {
 
     & > * {
         gap: 8.12rem;
+        font-size: 0;
     }
 
     p,
     small {
-        margin: 1rem 0 2rem;
+        margin-bottom: 2rem;
         color: var(--grey);
         font-size: 1rem;
         line-height: 1.75rem;
     }
 
-    a[class="btn"] {
+    .btn {
         display: block;
         width: fit-content;
         padding: 0.6875rem 2.3125rem;
@@ -490,7 +491,7 @@ h2 {
         object-fit: cover;
     }
 
-    a {
+    .btn {
         padding-inline: 2rem;
     }
 }
