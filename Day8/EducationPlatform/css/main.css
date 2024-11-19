@@ -435,7 +435,7 @@ h2 {
         line-height: 1.75rem;
     }
 
-    a {
+    a[class="btn"] {
         display: block;
         width: fit-content;
         padding: 0.6875rem 2.3125rem;
@@ -444,10 +444,6 @@ h2 {
         font-size: 1rem;
         font-weight: 600;
         line-height: 1.75rem;
-
-        &:last-of-type {
-            padding: 0.6875rem 2rem;
-        }
     }
 }
 
@@ -466,26 +462,36 @@ h2 {
 #features__illustration {
     gap: 1.88rem;
 
+    a {
+        margin-top: 2.12rem;
+
+        &:last-of-type {
+            margin-top: 0;
+        }
+    }
+
     img {
         width: 16.875rem;
         height: 25.25rem;
-        margin-top: 2.12rem;
         border-radius: 1rem;
         object-fit: cover;
-    }
 
-    img:last-of-type {
-        height: 25.3125rem;
-        margin-top: 0;
+        &:last-of-type {
+            height: 25.3125rem;
+        }
     }
 }
 
-#cta {    
+#cta {
     img {
         width: 29.375rem;
         height: 27.5rem;
         border-radius: 1.25rem;
         object-fit: cover;
+    }
+
+    a {
+        padding-inline: 2rem;
     }
 }
 
