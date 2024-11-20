@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            h2 {
+                width: fit-content;
+                margin: auto;
+                font-size: 36px;
+                font-weight: 700;
+                position: relative;
+            }
+
+            h2::before, h2::after {
+                --width: 3px;
+                --length: 130%;
+                content: "";
+                width: var(--length);
+                border: var(--width) solid #1f1d2a;
+                position: absolute;
+                top: 97%;
+                left: calc(var(--width) * -1 - (var(--length) - 100%) / 2);
+            }
+
+            h2::after {
+                --length: 300%;
+                border-radius: var(--width);
+                border-style: dashed;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>About us</h2>
+    </body>
+</html>

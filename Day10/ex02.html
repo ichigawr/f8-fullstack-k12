@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            p {
+                width: fit-content;
+                font-size: 36px;
+                font-weight: 700;
+                position: relative;
+            }
+
+            p::before {
+                --width: 2px;
+                content: "";
+                width: 0;
+                border: var(--width) solid #1f1d2a;
+                border-left-width: 0px;
+                border-right-width: 0px;
+                border-radius: var(--width);
+                position: absolute;
+                top: 97%;
+                left: calc(var(--width) * -1);
+                transition: all ease 0.5s;
+            }
+
+            p:hover::before {
+                width: 100%;
+                border-width: var(--width);
+            }
+        </style>
+    </head>
+    <body>
+        <p>the p</p>
+    </body>
+</html>

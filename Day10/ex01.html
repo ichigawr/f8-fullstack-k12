@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <style>
+        .container {
+            margin: 50px 0 0 20px;
+            transform-style: preserve-3d;
+            transform: perspective(1000px);
+        }
+
+        .box {
+            display: inline-block;
+            width: 100px;
+            height: 200px;
+            transition: 0.5s;
+            filter: brightness(0);
+            background-color: aqua;
+
+            &:has(+ *:hover) {
+                filter: brightness(0.6);
+                transform: translateZ(150px) rotateY(-40deg);
+            }
+
+            &:has(+ * + *:hover) {
+                filter: brightness(0.4);
+                transform: translateZ(70px) rotateY(-20deg);
+            }
+
+            &:has(+ * + * + *:hover) {
+                filter: brightness(0.2);
+                transform: translateZ(30px) rotateY(-10deg);
+            }
+        }
+
+        .box:hover {
+            filter: brightness(1);
+            transform: translateZ(200px);
+
+            & + * {
+                filter: brightness(0.6);
+                transform: translateZ(150px) rotateY(40deg);
+            }
+
+            & + * + * {
+                filter: brightness(0.4);
+                transform: translateZ(70px) rotateY(20deg);
+            }
+
+            & + * + * + * {
+                filter: brightness(0.2);
+                transform: translateZ(30px) rotateY(10deg);
+            }
+        }
+    </style>
+    <body>
+        <div class="container">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+    </body>
+</html>
