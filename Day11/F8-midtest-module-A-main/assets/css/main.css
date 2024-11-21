@@ -1,0 +1,254 @@
+/* Common: BEGIN */
+:root {
+    --Typography-1: #2d3134;
+    --Typography-2: #676a6c;
+    --Color-1: #ff7b29;
+    --Color-2: #31c3e0;
+    --Stock: #ececec;
+}
+
+body {
+    width: 73.12rem;
+    margin: auto;
+    padding: 2rem 0 1.88rem;
+    font-family: "Poppins", serif;
+    color: var(--Typography-2);
+    font-weight: 500;
+}
+
+h1,
+h2 {
+    color: var(--Typography-1);
+}
+
+button {
+    border: none;
+    border-radius: 8px;
+    background-color: var(--Color-1);
+    font-family: "Poppins", serif;
+    color: #fff;
+    font-weight: 600;
+    transition: ease 0.3s;
+    cursor: pointer;
+
+    &:active {
+        transform: scale(0.95);
+    }
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
+/* Common: END */
+
+/* Header: BEGIN */
+
+.nav-bar {
+    font-size: 0.875rem;
+    line-height: 1rem;
+
+    nav > ul {
+        gap: 2.12rem;
+    }
+
+    a {
+        position: relative;
+        color: var(--Typography-2);
+
+        &:hover {
+            color: var(--Typography-1);
+
+            &::before {
+                position: absolute;
+                bottom: -15%;
+                content: "";
+                width: 0.75rem;
+                border: 0.1rem solid var(--Color-1);
+                border-radius: 0.0625rem;
+            }
+        }
+    }
+}
+
+#contact-us-btn {
+    width: 8.1875rem;
+    height: 3rem;
+    background-color: var(--Color-2);
+    font-size: 0.875rem;
+    font-weight: 500;
+    letter-spacing: -0.00875rem;
+}
+
+/* Header: END */
+
+/* Main: BEGIN */
+
+/* Banner: BEGIN */
+
+#banner {
+    position: relative;
+
+    img {
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+    }
+
+    h1 {
+        margin: 7.5rem 0 8.75rem;
+        text-align: center;
+        font-size: 3.875rem;
+        font-weight: 700;
+        line-height: 4.375rem;
+    }
+}
+
+/* Banner: END */
+
+/* Recent articles: BEGIN */
+
+#recent-articles {
+    gap: 3.5rem;
+
+    & > div:not(#recent-articles__recent-blog) {
+        font-size: 0;
+
+        h2 {
+            width: 35.875rem;
+            margin-top: 1.5rem;
+            font-size: 2.5rem;
+            font-weight: 700;
+            line-height: 3.125rem;
+        }
+    }
+}
+
+#recent-articles__recent-blog {
+    width: 30.5rem;
+    height: 33.75rem;
+    padding: 1.87rem 1.87rem 2.75rem;
+    border-radius: 0.625rem;
+    background-color: var(--Stock);
+
+    form {
+        font-size: 0;
+    }
+
+    input {
+        width: 18.1875rem;
+        height: 3.375rem;
+        padding-left: 1.25rem;
+        margin-right: 1.25rem;
+        border-radius: 0.5rem;
+        border: 1px solid var(--Stock);
+        background: #fff;
+        font-family: "Inter", sans-serif;
+        font-size: 1rem;
+    }
+
+    p {
+        margin: 2.5rem 0 1.87rem;
+        color: var(--Typography-1);
+        font-family: "Inter", sans-serif;
+        font-size: 1.5rem;
+        font-weight: 600;
+        line-height: 2rem;
+    }
+
+    & > div {
+        flex-direction: column;
+        gap: 1.25rem;
+    }
+}
+
+.recent-blog {
+    gap: 1.25rem;
+
+    h2 {
+        font-size: 1.25rem;
+        font-weight: 500;
+        line-height: 1.875rem;
+    }
+}
+
+#search-btn {
+    width: 7.3125rem;
+    height: 3.375rem;
+    border-radius: 0.5rem;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* Recent articles: END */
+
+/* Articles list: BEGIN */
+
+#articles-list {
+    display: grid;
+    margin: 7rem 0 8.75rem;
+}
+
+#articles-list__container {
+    flex-wrap: wrap;
+    gap: 1.87rem;
+    margin-bottom: 5rem;
+    font-family: "Inter", sans-serif;
+}
+
+.article {
+    width: 23.125rem;
+    font-size: 0;
+
+    h2 {
+        margin: 1.25rem 0 1rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+        line-height: 2rem;
+    }
+
+    p {
+        margin-bottom: 1.25rem;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.625rem;
+    }
+}
+
+.read-more {
+    color: var(--Color-1);
+    font-family: "Poppins", serif;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+}
+
+#see-more-btn {
+    width: 11.9375rem;
+    height: 4.125rem;
+    margin: auto;
+    border-radius: 0.75rem;
+    box-shadow: 0px 30px 30px -18px rgba(229, 89, 54, 0.16);
+    font-size: 1.125rem;
+    letter-spacing: 0.01125rem;
+}
+
+/* Articles list: END */
+
+/* Main: END */
+
+/* Footer: BEGIN */
+
+
+
+/* Footer: END */
