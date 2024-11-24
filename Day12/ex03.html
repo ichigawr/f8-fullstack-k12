@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            .container {
+                width: 300px;
+                aspect-ratio: 1 / 1;
+                display: grid;
+                grid-template-columns: repeat(12, 1fr);
+                grid-template-rows: repeat(4, 1fr);
+                border: 2px solid red;
+                grid-template:
+                        "a a a a a a b b b b b b" 1fr
+                        "c c c c d d d d e e e e" 1fr
+                        "f f f g g g h h h i i i" 1fr
+                        "k k l l m m n n o o p p" 1fr;
+            }
+
+            .item {
+                border: 1.5px dashed orange;
+            }
+
+            .item-1 {
+                grid-area: a;
+            }
+
+            .item-2 {
+                grid-area: b;
+            }
+
+            .item-3 {
+                grid-area: c;
+            }
+
+            .item-4 {
+                grid-area: d;
+            }
+
+            .item-5 {
+                grid-area: e;
+            }
+
+            .item-6 {
+                grid-area: f;
+            }
+
+            .item-7 {
+                grid-area: g;
+            }
+
+            .item-8 {
+                grid-area: h;
+            }
+
+            .item-9 {
+                grid-area: i;
+            }
+
+            .item-10 {
+                grid-area: k;
+            }
+
+            .item-11 {
+                grid-area: l;
+            }
+
+            .item-12 {
+                grid-area: m;
+            }
+
+            .item-13 {
+                grid-area: n;
+            }
+
+            .item-14 {
+                grid-area: o;
+            }
+
+            .item-15 {
+                grid-area: p;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="item item-1">Item-1</div>
+            <div class="item item-2">Item-2</div>
+            <div class="item item-3">Item-3</div>
+            <div class="item item-4">Item-4</div>
+            <div class="item item-5">Item-5</div>
+            <div class="item item-6">Item-6</div>
+            <div class="item item-7">Item-7</div>
+            <div class="item item-8">Item-8</div>
+            <div class="item item-9">Item-9</div>
+            <div class="item item-10">Item-10</div>
+            <div class="item item-11">Item-11</div>
+            <div class="item item-12">Item-12</div>
+            <div class="item item-13">Item-13</div>
+            <div class="item item-14">Item-14</div>
+            <div class="item item-15">Item-15</div>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, enim.</p>
+    </body>
+</html>

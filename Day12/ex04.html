@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            body {
+                display: grid;
+                grid-auto-rows: minmax(100px, auto);
+                grid-template-areas: 
+                    "header header header header"
+                    "nav nav nav nav"
+                    "left-content main-content main-content right-content"
+                    "footer footer footer footer";
+                gap: 5px;
+            }
+
+            header {
+                grid-area: header;
+                background-color: antiquewhite;
+            }
+
+            nav {
+                grid-area: nav;
+                background-color: yellow;
+            }
+
+            #left-content {
+                grid-area: left-content;
+                background-color: green;
+            }
+
+            #main-content {
+                grid-area: main-content;
+                background-color: greenyellow;
+
+                ul {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    gap: 5px;
+                    width: 100%;
+                    padding: 0;
+                }
+
+                li {
+                    list-style: none;
+                    background-color: #a35fe3;
+                }
+            }
+
+            #right-content {
+                grid-area: right-content;
+                background-color: orange;
+            }
+
+            footer {
+                grid-area: footer;
+                background-color: plum;
+            }
+        </style>
+    </head>
+    <body>
+        <header>header</header>
+        <nav>nav</nav>
+        <section id="left-content">left content</section>
+        <section id="main-content">
+            <p>Danh sach san pham</p>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+                <li>Item 5</li>
+                <li>Item 6</li>
+            </ul>
+        </section>
+        <section id="right-content">right content</section>
+        <footer>footer</footer>
+    </body>
+</html>

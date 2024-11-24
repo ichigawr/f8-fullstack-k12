@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bài 1.2</title>
+        <style>
+            body {
+                display: grid;
+                grid-template:
+                    "header header header" 2fr
+                    "left main right" 19fr
+                    "left sub right" 1fr
+                    "footer footer footer" 2fr;
+                width: 500px;
+            }
+            
+            body > * {
+                border: 1px dotted blue;
+            }
+
+            #header {
+                grid-area: header;
+            }
+
+            #left-content {
+                grid-area: left;
+            }
+
+            #main-content {
+                grid-area: main;
+            }
+
+            #sub-content {
+                grid-area: sub;
+            }
+
+            #right-content {
+                grid-area: right;
+            }
+
+            #footer {
+                grid-area: footer;
+            }
+        </style>
+    </head>
+    <body>
+        <section id="header">Header</section>
+        <section id="left-content">Left content</section>
+        <section id="main-content">Main content</section>
+        <section id="right-content">Right content</section>
+        <section id="sub-content">Sub content</section>
+        <section id="footer">Footer</section>        
+    </body>
+</html>
