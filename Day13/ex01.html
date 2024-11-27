@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            .square,
+            .circle {
+                width: 100px;
+                aspect-ratio: 1 / 1;
+                background-color: red;
+            }
+
+            .square {
+                position: relative;
+                margin: 50px auto;
+                transform: rotate(45deg);
+            }
+
+            .circle {
+                position: absolute;
+                border-radius: 50%;
+                transform: translateY(-50%);
+
+                & + .circle {
+                    transform: translateX(-50%);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="square">
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+    </body>
+</html>
