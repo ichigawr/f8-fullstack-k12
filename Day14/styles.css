@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333f48;
+}
+
+.container {
+    margin: auto;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.align-center {
+    align-items: center;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    color: #333f48;
+    font-size: 14px;
+}
+
+header {
+    position: relative;
+    z-index: 200;
+    background-color: white;
+    border-bottom: 1px solid gainsboro;
+}
+
+header > .container {
+    justify-content: flex-start;
+    gap: 88px;
+    width: 1170px;
+    max-width: 100%;
+    height: 90px;
+    padding: 0 15px;
+}
+
+header {
+    nav, .menu, .menu__item, .menu__link {
+        height: 100%;
+    }
+}
+
+header .menu__link {
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+
+header .menu {
+    gap: 24px;
+}
+
+header .menu__link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    right: 50%;
+    border-top: 4px solid #dd362b;
+    border-radius: 4px 4px 0 0;
+    transition: ease 0.3s;
+}
+
+header .menu__link:hover::after {
+    left: 0;
+    right: 0;
+}
+
+header .menu__item:hover .menu__sub-menu {
+    display: flex;
+    gap: 20px;
+    padding-left: 15%;
+}
+
+header:has(.menu__item.overlay-trigger:hover) + .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 90;
+    background-color: #00000033;
+}
+
+header .menu__link {
+    font-weight: 700;
+}
+
+header .menu__sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    border-top: 1px solid gainsboro;
+    background-color: white;
+    line-height: 30px;
+
+    .col {
+        padding-inline: 40px;
+    }
+    
+    .col:nth-child(2) {
+        border-width: 0 1px 0 1px;
+        border-style: solid;
+        border-color: gainsboro;
+    }
+    
+        .col span {
+            font-weight: 700;
+        }
+}
