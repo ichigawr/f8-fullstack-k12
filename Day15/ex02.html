@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <style>
+        .container {
+            width: 1400px;
+            height: 500px;
+            margin: auto;
+            background-color: green;
+        }
+
+        @media (width < 1200px) {
+            .container {
+                width: 1024px;
+            }
+        }
+
+        @media (width < 1024px) {
+            .container {
+                width: 768px;
+            }            
+        }
+
+        @media (width < 768px) {
+            .container {
+                width: 425px;
+            }
+        }
+
+        @media (width < 425px) {
+            .container {
+                width: 375px;
+            }
+        }
+
+        @media (width < 375px) {
+            .container {
+                width: 320px;
+            }
+        }
+    </style>
+    <body>
+        <div class="container">
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe
+                iure dolorem nemo temporibus vel hic error corporis voluptatem
+                ea nulla dignissimos cum id sapiente eos dicta deserunt, aliquam
+                libero. Totam.
+            </p>
+        </div>
+    </body>
+</html>

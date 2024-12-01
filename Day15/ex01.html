@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            header {
+                background-color: yellow;
+                padding: 40px 0;
+            }
+
+            main {
+                min-height: 100vh;
+            }
+
+            footer {
+                background-color: green;
+                padding: 40px 0;
+            }
+
+            @media only print {
+                * {
+                    print-color-adjust: exact;
+                    -webkit-print-color-adjust: exact;
+                }
+                
+                footer {
+                    color: white;
+                }
+            }
+
+            @media only screen and (width < 992px) {
+                header {
+                    background-color: greenyellow;
+                }
+            }
+
+            
+        </style>
+    </head>
+    <body>
+        <header>Header</header>
+        <main>
+            <h1>Heading 1</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+                impedit repellendus ab ad facere hic veritatis numquam non
+                voluptatibus deserunt.
+            </p>
+        </main>
+        <footer>Footer</footer>
+    </body>
+</html>
