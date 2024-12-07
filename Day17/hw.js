@@ -23,7 +23,7 @@ console.log(max(2, 3, 5));
 /* Bai 3 */
 
 function haveSameSign(a, b) {
-  return a / b >= 0;
+  return a * b >= 0;
 }
 
 console.log(haveSameSign(3, -5));
