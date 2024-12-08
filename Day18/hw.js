@@ -20,7 +20,7 @@ const calcTax = (income) => {
     tax = (25 - 11) * 0.05 + (50 - 25) * 0.1 + (income - 50) * 0.2;
   else tax = (25 - 11) * 0.05 + (50 - 25) * 0.1 + (80 - 50) * 0.2 + (income - 80) * 0.3;
 
-  alert("Thuế thu nhập cá nhân: " + tax);
+  alert("Thuế thu nhập cá nhân: " + tax + " triệu");
 };
 
 const income = parseFloat(window.prompt("Lương (triệu):"));
