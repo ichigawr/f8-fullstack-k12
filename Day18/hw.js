@@ -1,6 +1,13 @@
+const isValid = (value) => !isNaN(value) && value > 0;
+
 /** Bai 1 */
 
 const calcTax = (income) => {
+  if (!isValid(income)) {
+    alert("Dữ liệu không hợp lệ");
+    return;
+  }
+  
   let tax = 0;
 
   if (income <= 11)
@@ -24,6 +31,11 @@ calcTax(income);
 /** Bai 2 */
 
 const calcElectricityBill = (kwh) => {
+  if (!isValid(kwh)) {
+    alert("Dữ liệu không hợp lệ");
+    return;
+  }
+
   const thresholds = [0, 50, 100, 200, 300, 400];
   const prices = [1678, 1734, 2014, 2536, 2834, 2927];
   const fixedBill = [0, 83900, 170600, 372000, 625600, 909000];
@@ -47,6 +59,11 @@ calcElectricityBill(kwh);
 /** Bai 3 */
 
 const isRightTriangle = (a, b, c) => {
+  if (!isValid(a) || !isValid(b) || !isValid(c)) {
+    alert("Dữ liệu không hợp lệ");
+    return;
+  }
+
   if (a ** 2 === b ** 2 + c ** 2)
     alert("Là tam giác vuông");
   else if (b ** 2 === c ** 2 + a ** 2)
@@ -67,8 +84,6 @@ isRightTriangle(a, b, c);
 /** Bai 4 */
 
 const calcBMI = (weight, height) => {
-  const isValid = (value) => !isNaN(value) && value > 0;
-
   if (!isValid(weight) || !isValid(height)) {
     alert("Dữ liệu không hợp lệ");
     return;
