@@ -7,18 +7,20 @@ const calcTax = (income) => {
     alert("Dữ liệu không hợp lệ");
     return;
   }
-  
+
   let tax = 0;
 
-  if (income <= 11)
-    tax = 0;
-  else if (income <= 25)
-    tax = (income - 11) * 0.05;
-  else if (income <= 50)
-    tax = (25 - 11) * 0.05 + (income - 25) * 0.1;
+  if (income <= 11) tax = 0;
+  else if (income <= 25) tax = (income - 11) * 0.05;
+  else if (income <= 50) tax = (25 - 11) * 0.05 + (income - 25) * 0.1;
   else if (income <= 80)
     tax = (25 - 11) * 0.05 + (50 - 25) * 0.1 + (income - 50) * 0.2;
-  else tax = (25 - 11) * 0.05 + (50 - 25) * 0.1 + (80 - 50) * 0.2 + (income - 80) * 0.3;
+  else
+    tax =
+      (25 - 11) * 0.05 +
+      (50 - 25) * 0.1 +
+      (80 - 50) * 0.2 +
+      (income - 80) * 0.3;
 
   alert("Thuế thu nhập cá nhân: " + tax + " triệu");
 };
@@ -64,12 +66,14 @@ const isRightTriangle = (a, b, c) => {
     return;
   }
 
-  if (a ** 2 === b ** 2 + c ** 2)
-    alert("Là tam giác vuông");
-  else if (b ** 2 === c ** 2 + a ** 2)
-    alert("Là tam giác vuông");
-  else if (c ** 2 === a ** 2 + b ** 2)
-    alert("Là tam giác vuông");
+  if (a + b <= c || b + c <= a || c + a <= b) {
+    alert("Dữ liệu không hợp lệ");
+    return;
+  }
+
+  if (a ** 2 === b ** 2 + c ** 2) alert("Là tam giác vuông");
+  else if (b ** 2 === c ** 2 + a ** 2) alert("Là tam giác vuông");
+  else if (c ** 2 === a ** 2 + b ** 2) alert("Là tam giác vuông");
   else alert("Không là tam giác vuông");
 };
 
