@@ -67,7 +67,7 @@ const isRightTriangle = (a, b, c) => {
   }
 
   if (a + b <= c || b + c <= a || c + a <= b) {
-    alert("Dữ liệu không hợp lệ");
+    alert("Không phải là tam giác");
     return;
   }
 
