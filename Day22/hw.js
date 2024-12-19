@@ -2,7 +2,7 @@ const data = [];
 
 const handleRegister = (name, password, email) => {
   if (!name || !password || !email) {
-    alert("Thông tin không đầy đủ");
+    console.log("Thông tin không đầy đủ");
     return;
   }
 
@@ -26,7 +26,7 @@ const handleLogin = (email, password) => {
     }
   }
 
-  alert("Thông tin đăng nhập không hợp lệ");
+  console.log("Thông tin đăng nhập không hợp lệ");
 };
 
 const dataLogin = handleLogin("nguyenvanb@email.com", "1234567");
