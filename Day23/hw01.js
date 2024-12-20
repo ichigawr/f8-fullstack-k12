@@ -32,16 +32,16 @@ const products = [
 ];
 
 const getTopProducts = (products, top) => {
-  const tmp = products.slice();
+  const productsCopy = products.slice();
 
-  for (let i = 0; i < tmp.length - 1; i++) {
-    for (let j = i + 1; j < tmp.length; j++) {
-      if (tmp[j] > tmp[i])
-        [tmp[i], tmp[j]] = [tmp[j], tmp[i]];
+  for (let i = 0; i < productsCopy.length - 1; i++) {
+    for (let j = i + 1; j < productsCopy.length; j++) {
+      if (productsCopy[j] > productsCopy[i])
+        [productsCopy[i], productsCopy[j]] = [productsCopy[j], productsCopy[i]];
     }
   }
 
-  return tmp.slice(0, top);
+  return productsCopy.slice(0, top);
 };
 
 const result = getTopProducts(products, 3);
