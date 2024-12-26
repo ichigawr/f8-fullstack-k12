@@ -1,5 +1,5 @@
 function fibonacci(n) {
-  if (isNaN(n) || n < 1) {
+  if (!Number.isInteger(n) || n < 1) {
     console.log("Số phần tử không hợp lệ");
     return;
   }
