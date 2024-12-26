@@ -1,11 +1,16 @@
-function fibonacci(n) {
-  if (!Number.isInteger(n) || n < 1) {
-    console.log("Số phần tử không hợp lệ");
-    return;
+function fibonacci() {
+  let n;
+
+  while (true) {
+    n = parseInt(window.prompt("Nhập số phần tử (số nguyên dương):"));
+
+    if (isNaN(n) || n < 1)
+      alert("Số phần tử không hợp lệ");
+    else break;
   }
 
   if (n === 1) {
-    console.log(0);
+    document.write(0);
     return;
   }
 
@@ -15,17 +20,19 @@ function fibonacci(n) {
     fib.push(fib[i - 1] + fib[i - 2]);
   }
 
-  console.log(fib);
+  document.write(`Dãy Fibonacci với ${n} phần tử: ` + fib.join(", "));
 }
 
-fibonacci(5);
+fibonacci();
 
-fibonacci(10);
+// fibonacci(5);
 
-fibonacci(0);
+// fibonacci(10);
 
-fibonacci(-5);
+// fibonacci(0);
 
-fibonacci("abc");
+// fibonacci(-5);
 
-fibonacci(1);
+// fibonacci("abc");
+
+// fibonacci(1);
