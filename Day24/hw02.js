@@ -2,9 +2,9 @@ function fibonacci() {
   let n;
 
   while (true) {
-    n = parseInt(window.prompt("Nhập số phần tử (số nguyên dương):"));
+    n = parseFloat(window.prompt("Nhập số phần tử (số nguyên dương):"));
 
-    if (isNaN(n) || n < 1)
+    if (isNaN(n) || n < 1 || n !== parseInt(n))
       alert("Số phần tử không hợp lệ");
     else break;
   }
